@@ -9,6 +9,6 @@ file 'libgraycode.dylib' => 'graycode.o' do
   sh 'g++ -shared -o libgraycode.dylib graycode.o'
 end
 
-rule '.o' => '.c' do |t|
+rule '.o' => '.cpp' do |t|
   sh "g++ -I. -c #{t.source}"
 end
