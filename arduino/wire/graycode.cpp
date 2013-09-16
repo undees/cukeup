@@ -77,7 +77,8 @@ void loop() {
         counter = (counter + 1) % ENTRIES;
         updateLeds();
     } else if (isQuery(command)) {
-        Serial.write(counter);
+        Serial.write(leds());
+        Serial.write('\n');
     } else {
         counter = newCounter(command);
         updateLeds();
