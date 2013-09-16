@@ -25,7 +25,7 @@ namespace Calc.Spec
         {
             window.Keyboard.Enter(a + "*" + b + "=");
         }
-        
+
         [Then(@"I should get (.*)")]
         public void ThenIShouldGet(string expected)
         {

@@ -38,7 +38,6 @@ Content-Type: text/plain\r\n\r\n");
     mg_free(multiplicand_s);
 }
 
-
 static void get_result(
     struct mg_connection *conn,
     const struct mg_request_info *request_info,
@@ -48,6 +47,7 @@ static void get_result(
         "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\n%d",
         result);
 }
+
 int main()
 {
     struct mg_context *ctx = mg_start();
