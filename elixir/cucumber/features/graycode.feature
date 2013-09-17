@@ -1,6 +1,6 @@
 Feature: Gray Code
   Scenario: Reset
-    Given the LEDs read "OOO"
+    Given the LEDs read "ooo"
     When I reset the counter
     Then the LEDs should read "..."
 
@@ -10,11 +10,11 @@ Feature: Gray Code
     Then the LEDs should read "<nplus1>"
     Examples:
       | n   | nplus1 |
-      | ... | ..O    |
-      | ..O | .OO    |
-      | .OO | .O.    |
-      | .O. | OO.    |
-      | OO. | OOO    |
-      | OOO | O.O    |
-      | O.O | O..    |
-      | O.. | ...    |
+      | ... | ..o    |
+      | ..o | .oo    |
+      | .oo | .o.    |
+      | .o. | oo.    |
+      | oo. | ooo    |
+      | ooo | o.o    |
+      | o.o | o..    |
+      | o.. | ...    |
